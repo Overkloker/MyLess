@@ -42,14 +42,67 @@ header {
 
 .tab {
   color:      #ffffff;
-  width: 100px;
-  height: 70px;
-  margin: auto;
-  background: #49ADA0;
+  width:      100px;
+  height:     70px;
+  margin:     auto;
+  background: #49ada0;
+  margin-top: 5px;
   .rounded_top;
 }
 
 .submit {
   .rounded_top;
   .tab;
+}
+
+.rounded_top1(@radius) {
+  -webkit-border-top-left-radius:  @radius;
+  -webkit-border-top-right-radius: @radius;
+  -moz-border-radius-topleft:      @radius;
+  -moz-border-radius-topright:     @radius;
+  border-top-left-radius:          @radius;
+  border-top-right-radius:         @radius;
+}
+
+.tab1 {
+  color:      #ffffff;
+  width:      100px;
+  height:     70px;
+  margin:     auto;
+  background: #ad323b;
+  .rounded_top1(6px);
+  margin-top: 5px;
+}
+
+.submit1 {
+  .tab;
+  .rounded_top1(11px);
+  background: #07ff31;
+}
+
+//todo buttton mixin
+.radius(@radius:6px) {
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+  border-radius: @radius;
+}
+
+.button-mix(@radius:3px, @background: #e7ba64, @padding: 4px, @width: 300px, @margin: auto) {
+  .radius(@radius);
+  background:@background;
+  border: 1px solid @background - #222;
+  padding: @padding;
+  width: @width;
+  margin: @margin;
+}
+.button {
+  .button-mix(0px);
+}
+
+// todo border
+.gray_border(@width: 1px, @type: solid, @color: #bbb){
+  border:@arguments;
+}
+.button {
+  .gray_border(2px, dashed);
 }
