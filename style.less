@@ -143,6 +143,34 @@ header {
   }
 }
 
-.weird-element {
-  content: ~'^//* some horrible but needed css hack';
+
+@base: #f04615;
+@width: 0.5;
+
+
+//todo functions
+.class {
+  width: percentage(@width); // returns `50%`
+  color: saturate(@base, 5%);
+  background-color: spin(lighten(@base, 25%), 8);
+}
+
+
+
+#bundle {
+  .button {
+    display: block;
+    border: 1px solid black;
+    background-color: grey;
+    &:hover {
+      background-color: white
+    }
+  }
+  .tab {}
+  .citation {}
+}
+
+#header a {
+  color: orange;
+  #bundle > .button;
 }
