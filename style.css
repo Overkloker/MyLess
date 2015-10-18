@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+  padding: 0;
+  color: #6088ff;
+}
+header .head {
+  color: #6088ff;
+}
+.aaa1,
+.aaa2 {
+  height: 50px;
+  width: 100%;
+}
+.class {
+  background-color: #b98ba6;
+}
+.aaa1 {
+  background: #c480bd;
+}
+.aaa2 {
+  background-color: #b98ba6;
+}

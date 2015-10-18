@@ -1,0 +1,31 @@
+body {
+  margin:  0;
+  padding: 0;
+  color:   #6088ff;
+}
+
+@color1: #ff5f12;
+header {
+  //background: darken(@color1, 20%);
+  .head {
+    color: #6088ff;
+  }
+}
+
+.aaa1, .aaa2 {
+  height: 50px;
+  width:  100%;
+}
+
+@color: #c480bd;
+.class {
+  background-color: desaturate(spin(@color, 18), 12%);
+}
+
+.aaa1 {
+background: @color;
+}
+
+.aaa2 {
+  .class;
+}
