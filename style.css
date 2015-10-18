@@ -135,3 +135,6 @@ header .head {
     background: #6088ff;
   }
 }
+.weird-element {
+  content: ^//* some horrible but needed css hack;
+}
