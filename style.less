@@ -106,3 +106,15 @@ header {
 .button {
   .gray_border(2px, dashed);
 }
+
+.screen-color {
+  @media screen {
+    color: green;
+    @media (min-width: 768px) {
+      color: red;
+    }
+  }
+  @media tv {
+    color: black;
+  }
+}
