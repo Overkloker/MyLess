@@ -160,3 +160,15 @@ header .head {
 #header a:hover {
   background-color: white;
 }
+.column-1 {
+  width: 25%;
+}
+.column-2 {
+  width: 50%;
+}
+.column-3 {
+  width: 75%;
+}
+.column-4 {
+  width: 100%;
+}
